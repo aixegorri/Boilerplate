@@ -1,0 +1,19 @@
+{
+  "name": "aixegorri-boilerplate",
+  "version": "1.0.0",
+  "description": "Aixegorri Starter Kit",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aixegorri/Boilerplate.git"
+  },
+  "author": "Aixegorri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aixegorri/Boilerplate/issues"
+  },
+  "homepage": "https://github.com/aixegorri/Boilerplate#readme"
+}
