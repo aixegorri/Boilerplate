@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    $STYLES
+\*------------------------------------*/
+/**
+ * Aquí incluímos todos los módulos (archivos .scss) que se can
+ * a compilar en el CSS definitivo: /css/styles.css.
+ * Si no usas algún módulo, es recomendable que elimines
+ * o comentes su inclusión para no tener estilos innecesarios en tu CSS final
+ * y optimizar lo máximo posible.
+ */
+$media-queries-supported : true;
+
+@import "contenido.scss";
+
+@import "core/variables.scss";
+
+@import "core/mixins.scss";
+
+@import "core/placeholders.scss";
+
+@import "core/icons.scss";
+
+@import "componentes/reset.scss";
+
+@import "componentes/fonts.scss";
+
+@import "componentes/links.scss";
+
+@import "componentes/tables.scss";
+
+@import "componentes/buttons.scss";
+
+@import "componentes/elements.scss";
+
+@import "componentes/tipografia.scss";
+
+@import "componentes/navigation.scss";
+
+@import "componentes/pagination.scss";
+
+@import "componentes/forms.scss";
+
+@import "layout/site.scss";
+
+@import "componentes/textures.scss";
+
+@import "layout/breakpoints.scss";
+
+// @import "core/debug.scss";  // Utilizado para comprobar que el marcado HTML no contenga errores
