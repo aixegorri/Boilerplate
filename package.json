@@ -4,7 +4,13 @@
   "description": "Aixegorri Starter Kit",
   "main": "package.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w -o ./src/css ./src/scss",
+    "watch:metalang": "npm-run-all --parallel sass",
+    "devserver": "browser-sync start --server --directory --startPath ./src --files ./src --reload-delay=300 --reload-debounce=500",
+    "go": "npm-run-all --parallel devserver watch:metalang",
+    "clean": "del-cli ./dist/*",
+    "build:dist": "mkdir ./dist/css ./dist/img ./dist/js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/aixegorri/Boilerplate/issues"
   },
-  "homepage": "https://github.com/aixegorri/Boilerplate#readme"
+  "homepage": "https://github.com/aixegorri/Boilerplate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del-cli": "^1.1.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2"
+  }
 }

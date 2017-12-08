@@ -1,19 +1,17 @@
 @charset "UTF-8";
-/*------------------------------------*\
-    $STYLE
+/*------------------------------------*    $STYLES
 \*------------------------------------*/
 /**
  * Aquí incluímos todos los módulos (archivos .scss) que se can
- * a compilar en el CSS definitivo: /css/style.css.
+ * a compilar en el CSS definitivo: /css/styles.css.
  * Si no usas algún módulo, es recomendable que elimines
  * o comentes su inclusión para no tener estilos innecesarios en tu CSS final
  * y optimizar lo máximo posible.
  */
-/*------------------------------------*\
-    $CONTENIDO
+/*------------------------------------*    $CONTENT
 \*------------------------------------*/
 /**
- * Contenido..................... Esto que lees
+ * Content....................... Esto que lees
 
  * Variables..................... Configuramos todas las variables del framework
 
@@ -23,74 +21,67 @@
 
  * Reset......................... Reinicio de valores CSS
 
- * Fuentes....................... Fuentes que vamos a importar
+ * Fonts......................... Fuentes que vamos a importar
 
  * Links......................... Formas y estilos de los links
 
- * Tablas........................ Estilos de las tablas
+ * Tables........................ Estilos de las tablas
 
- * Botones....................... Estilos de Botones, skins y variantes
+ * Buttons....................... Estilos de Botones, skins y variantes
 
- * Elementos..................... Elementos varios como Imagen, HR, etc...
+ * Elements...................... Elementos varios como Imagen, HR, etc...
 
  * Tipografía.................... Encabezados, small, párrafos, listas, etc...
 
- * Navegación.................... Una navegación, por si quieres usar esta y no la tuya propia
+ * Navigation.................... Una navegación, por si quieres usar esta y no la tuya propia
 
- * Formularios................... Estilos de todos los elementos de formularios y sus variantes
+ * Forms......................... Estilos de todos los elementos de formularios y sus variantes
 
- * Sitio......................... Aquí escribes tus estilos para la web se vea como tu quieres ;)
+ * Site.......................... Aquí escribes tus estilos para la web se vea como tu quieres ;)
 
- * Paginación.................... Estilos básicos para las paginaciones
+ * Pagination.................... Estilos básicos para las paginaciones
 
- * Texturas...................... Badges, cajas y wells
+ * Textures...................... Badges, cajas y wells
 
  * Breakpoints................... Importamos breakpoints basados en las variables @bp$
 
  * Patron........................ Estilos para la guía de patrones
  */
-/*------------------------------------*\
-    $VARIABLES
+/*------------------------------------*    $VARIABLES
 \*------------------------------------*/
 /**
  *
  * Definimos y configuramos las variables CSS que vamos a utilizar
  *
  */
-/*------------------------------------*\
-    $BREAKPOINTS
+/*------------------------------------*    $BREAKPOINTS
 \*------------------------------------*/
 /**
  * "Start with the small screen first, then expand until it looks like shit. Time to insert a breakpoint!"
  */
-/*------------------------------------*\
-    $BORDER-BOX
+/*------------------------------------*    $BORDER-BOX
 \*------------------------------------*/
 /**
  * Quieres todos los elementos tener un box-sizing:border-box?
  * paulirish.com/2012/box-sizing-border-box-ftw ?
  */
-/*------------------------------------*\
-    $no-mediaquery-class
+/*------------------------------------*    $no-mediaquery-class
 \*------------------------------------*/
 /**
  * Si decides incluir lt-ie9 para dar soporte a navegadores sin estilos
  * esta es la clase que se añadirá a todos los elementos.
  */
-/*------------------------------------*\
-    $IMAGE-DIR
+/*------------------------------------*    $IMAGE-DIR
 \*------------------------------------*/
 /**
  * Con agregar esta variable a las imágenes declaradas en CSS apañamos:
  */
-/*------------------------------------*\
-    $LAYOUT
+/*------------------------------------*    $LAYOUT
 \*------------------------------------*/
 /**
  * Definimos elementos constantes del layout
  */
-/*------------------------------------*\
-    $FONT-FACE
+/*------------------------------------*    $FONT-FACE
 \*------------------------------------*/
 /**
  * Definimos las fuentes a utilizar:
@@ -98,8 +89,7 @@
  * $altfont para textos alternativos, como citas, intro, etc...
  * $codefont para código
  */
-/*------------------------------------*\
-    $TAMAÑOS
+/*------------------------------------*    $TAMAÑOS
 \*------------------------------------*/
 /**
  * Definimos las fuentes a utilizar:
@@ -107,8 +97,7 @@
  * $altfont para textos alternativos, como citas, intro, etc...
  * $codefont para código
  */
-/*------------------------------------*\
-    $COLORS
+/*------------------------------------*    $COLORS
 \*------------------------------------*/
 /**
  * Brand stuff
@@ -117,8 +106,7 @@
  * Escala de grises
  * A veces no queremos que el negro sea "negro" o el blanco "blanco", puedes cambiarlos.
  */
-/*------------------------------------*\
-    $TEXTURAS
+/*------------------------------------*    $TEXTURAS
 \*------------------------------------*/
 /**
  * Definimos Colores y elementos de popups, mensajes de alerta, etc...
@@ -126,30 +114,28 @@
 /* Colores sociales -> son los colores corporativos, pero cambiadlos
  * si hace falta. (también podéis añadir más)  ///////////////////////
  */
-/*------------------------------------*\
-    $MIXINS
+/*------------------------------------*    $MIXINS
 \*------------------------------------*/
-/*------------------------------------*\
-    $PLACEHOLDERS
+/*------------------------------------*    $PLACEHOLDERS
 \*------------------------------------*/
 /**
-* Centrar y dar un ancho máximo igual a $pagemaxwidth.
-*/
+  * Centrar y dar un ancho máximo igual a $pagemaxwidth.
+  */
 /**
-* The ghost, nudged to maintain perfect centering
-*/
+  * The ghost, nudged to maintain perfect centering
+  */
 /**
-* Escondemos el texto solo VISUALMENTE
-*/
+  * Escondemos el texto solo VISUALMENTE
+  */
 /**
-* Escondemos el texto de VISUALMENTE y SCREENREADERS
-*/
+  * Escondemos el texto de VISUALMENTE y SCREENREADERS
+  */
 /**
-* Escondemos pero mantenemos layout.
-*/
+  * Escondemos pero mantenemos layout.
+  */
 /**
-* Visualmente escondido, pero se puede detectar con teclado (focus).
-*/
+  * Visualmente escondido, pero se puede detectar con teclado (focus).
+  */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   position: static;
@@ -160,17 +146,37 @@
   overflow: visible; }
 
 /**
-* Clear floats.
-* http://bit.ly/1e3YaBH
-*/
+  * Clear floats.
+  * http://bit.ly/1e3YaBH
+  */
 /**
-* Gradientes los ocnvertimos en placeholders porque imprime 10 millones de
-* líneas inútiles en el CSS
-*/
-/*------------------------------------*\
-    $RESET
+  * Gradientes los convertimos en placeholders porque imprime 10 millones de
+  * líneas inútiles en el CSS
+  */
+@font-face {
+  font-family: "Icons";
+  src: url("../../fonts/Icons.eot");
+  src: url("../../fonts/Icons.eot?#iefix") format("eot"), url("../../fonts/Icons.woff") format("woff"), url("../../fonts/Icons.ttf") format("truetype"), url("../../fonts/Icons.svg#Icons") format("svg"); }
+
+.icon-rocknroll:before, .icon-stormtrooper:before {
+  font-family: "Icons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none; }
+
+.icon-rocknroll:before {
+  content: ""; }
+
+.icon-stormtrooper:before {
+  content: ""; }
+
+/*------------------------------------*    $RESET
 \*------------------------------------*/
-html, body, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+html, body, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -179,12 +185,12 @@ html, body, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquo
   vertical-align: baseline;
   background: transparent; }
 
-article, aside, figure, footer, header, hgroup, nav, section {
+article, aside, figure, footer, header, nav, section {
   display: block; }
 
 /**
-* Ningún padding jodiendo la marrana.
-*/
+    * Ningún padding jodiendo la marrana.
+    */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -192,8 +198,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
-/*------------------------------------*\
-    $FUENTES
+/*------------------------------------*    $FONTS
 \*------------------------------------*/
 /*
  * Por defecto incluyo una fuente de icomoon (http://icomoon.io/)
@@ -206,6 +211,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
   src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'icomoon';
@@ -249,8 +255,7 @@ you can use the generic selector below, but it's slower:
 .icon-eye:before {
   content: "\e002"; }
 
-/*------------------------------------*\
-    $LINKS
+/*------------------------------------*    $LINKS
 \*------------------------------------*/
 a {
   text-decoration: none;
@@ -266,8 +271,7 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-/*------------------------------------*\
-    $TABLAS
+/*------------------------------------*    $TABLES
 \*------------------------------------*/
 table {
   width: 100%;
@@ -298,10 +302,6 @@ table {
     border-top: 2px solid white; }
   table tbody tr td,
   table tbody tr th {
-    -webkit-transition: background-color 0.25s 0 linear;
-    -moz-transition: background-color 0.25s 0 linear;
-    -ms-transition: background-color 0.25s 0 linear;
-    -o-transition: background-color 0.25s 0 linear;
     transition: background-color 0.25s 0 linear; }
   table tbody tr:hover td,
   table tbody tr:hover th {
@@ -328,15 +328,14 @@ table {
 .table-striped tbody tr:nth-child(odd) th {
   background-color: white; }
 
-/*------------------------------------*\
-    $BOTONES
+/*------------------------------------*    $BOTONES
 \*------------------------------------*/
 /*
  * Definimos los botones y sus variantes
  */
 /**
-* .btn es la clase principal para definir un botón
-*/
+ * .btn es la clase principal para definir un botón
+ */
 .btn {
   display: inline-block;
   line-height: 2.25em;
@@ -345,7 +344,7 @@ table {
   vertical-align: middle;
   font-size: 100%;
   white-space: nowrap;
-  background-color: #ffa366;
+  background-color: #ffa367;
   border: none;
   font-weight: bold;
   cursor: pointer;
@@ -355,10 +354,10 @@ table {
   padding-right: 1em;
   padding-left: 1em;
   border-radius: 2px;
-  	/**
-   	* Nadie quiere un botón con texto subrayado cuando
-   	* hacemos hover.
-   	*/ }
+  /**
+ 	* Nadie quiere un botón con texto subrayado cuando
+ 	* hacemos hover.
+ 	*/ }
   .btn:hover {
     text-decoration: none; }
   .btn:active, .btn:focus {
@@ -366,8 +365,7 @@ table {
   .btn:visited {
     color: #262626; }
 
-/*------------------------------------*\
-    $BOTONES-VARIANTES
+/*------------------------------------*    $BOTONES-VARIANTES
 \*------------------------------------*/
 /**
  * Variantes de los botones: color para dar sensaciones.
@@ -377,14 +375,12 @@ table {
 * Inputs con estilo de botones
 */
 input[type="submit"].btn:hover {
-  border-color: #ff8533; }
+  border-color: #ff8534; }
 
 /**
 * Botón no disponible
 */
 .btn--disabled {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
   opacity: 0.5;
   cursor: default; }
 
@@ -447,14 +443,10 @@ input[type="submit"].btn:hover {
 .btn--inactive:hover,
 .btn--inactive:active,
 .btn--inactive:focus {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
   opacity: 0.5;
-  cursor: default;
-  cursor: text; }
+  cursor: default; }
 
-/*------------------------------------*\
-    $BOTONES-TAMAÑOS
+/*------------------------------------*    $BOTONES-TAMAÑOS
 \*------------------------------------*/
 /**
  * Variantes de los botones por tamaño.
@@ -475,8 +467,7 @@ input[type="submit"].btn:hover {
   padding-left: 3em;
   line-height: 3; }
 
-/*------------------------------------*\
-    $BOTONES-GRUPOS
+/*------------------------------------*    $BOTONES-GRUPOS
 \*------------------------------------*/
 /**
  * Con esta clase podemos agrupar los botones
@@ -495,76 +486,35 @@ input[type="submit"].btn:hover {
 
 .btn--group .btn:first-child {
   margin-left: 0;
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 2px;
-  -webkit-border-top-left-radius: 2px;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 2px;
-  -moz-border-radius-topleft: 2px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 2px;
   border-top-left-radius: 2px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box; }
 
 .btn--group .btn:last-child {
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 2px;
-  -moz-border-radius-bottomright: 2px;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 0;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box; }
 
 .btn--group .btn.large:first-child {
   margin-left: 0;
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 2px;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 2px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 2px;
-  -moz-border-radius-topleft: 0;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 2px;
   border-top-left-radius: 0;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box; }
 
 .btn--group .btn.large:last-child {
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 2px;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 2px;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 2px;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 2px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 2px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box; }
 
-/*------------------------------------*\
-    $ELEMENTOS
+/*------------------------------------*    $ELEMENTS
 \*------------------------------------*/
 hr {
   clear: both;
@@ -575,8 +525,7 @@ hr {
   border: 0;
   border-top: 1px solid white; }
 
-/*------------------------------------*\
-    $ELEMENTOS-IMÁGENES
+/*------------------------------------*    $ELEMENTS-IMAGES
 \*------------------------------------*/
 img {
   max-width: 100%;
@@ -596,8 +545,7 @@ img {
 .img--circle {
   border-radius: 100%; }
 
-/*------------------------------------*\
-    $ELEMENTOS-FIGURE
+/*------------------------------------*    $ELEMENTOS-FIGURE
 \*------------------------------------*/
 figure {
   margin-bottom: 1.5em; }
@@ -611,8 +559,7 @@ figure {
     font-style: italic;
     color: gray; }
 
-/*------------------------------------*\
-    $TIPOGRAFÍA
+/*------------------------------------*    $TIPOGRAFÍA
 \*------------------------------------*/
 h1,
 h2,
@@ -743,6 +690,7 @@ dt {
   clear: left;
   width: 20.25%;
   text-align: right; }
+
 .dl-horizontal dd {
   margin-left: 22.78%; }
 
@@ -793,8 +741,7 @@ sup {
 sub {
   bottom: -.25em; }
 
-/*------------------------------------*\
-    $NAVEGACIÓN
+/*------------------------------------*    $NAVIGATION
 \*------------------------------------*/
 /**
 *
@@ -862,8 +809,7 @@ sub {
     .nav--tabs > li > a {
       display: block; }
 
-/*------------------------------------*\
-    $PAGINACION
+/*------------------------------------*    $PAGINACIÓN
 \*------------------------------------*/
 /**
  * Paginación básica
@@ -888,19 +834,19 @@ sub {
 .pagination {
   text-align: center;
   /**
-   * Remove whitespace caused by `inline-block`.
-   */
+     * Remove whitespace caused by `inline-block`.
+     */
   letter-spacing: -0.31em;
   word-spacing: -0.43em; }
 
 .pagination > li {
   display: inline-block;
-  padding: 12PX;
+  padding: 12px;
   letter-spacing: normal;
   word-spacing: normal; }
 
 .pagination > li > a {
-  padding: 12PX;
+  padding: 12px;
   margin: -12px; }
 
 .pagination--first a:before {
@@ -909,8 +855,7 @@ sub {
 .pagination--last a:after {
   content: "\00A0" "\00BB"; }
 
-/*------------------------------------*\
-    $FORMULARIOS
+/*------------------------------------*    $FORMS
 \*------------------------------------*/
 form {
   margin: 0 0 1.5em 0; }
@@ -956,9 +901,6 @@ button,
 select,
 textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
 label {
@@ -1007,9 +949,6 @@ input[type="radio"] {
 
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   *width: 13px;
@@ -1017,7 +956,6 @@ input[type="radio"] {
 
 input[type="image"] {
   border: 0;
-  -webkit-box-shadow: none;
   box-shadow: none; }
 
 input[type="file"] {
@@ -1027,7 +965,6 @@ input[type="file"] {
   border: initial;
   background-color: transparent;
   background-color: initial;
-  -webkit-box-shadow: none;
   box-shadow: none; }
 
 input[type="button"],
@@ -1090,8 +1027,6 @@ textarea[disabled],
 input[readonly],
 select[readonly],
 textarea[readonly] {
-  -webkit-opacity: 0.5;
-  -moz-opacity: 0.5;
   opacity: 0.5;
   cursor: not-allowed; }
 
@@ -1105,7 +1040,6 @@ input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus,
 select:focus {
-  -webkit-box-shadow: none;
   box-shadow: none; }
 
 ::-webkit-input-placeholder {
@@ -1190,19 +1124,23 @@ input:required:focus:valid {
   background-color: #e9f5e9;
   border: 1px solid #5bb75b; }
 
-/*------------------------------------*\
-    $SITIO
+/*------------------------------------*    $SITE
 \*------------------------------------*/
 @-webkit-viewport {
   width: device-width; }
+
 @-moz-viewport {
   width: device-width; }
+
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 @viewport {
   width: device-width; }
+
 html {
   background: white;
   font-size: 100%;
@@ -1226,8 +1164,7 @@ body {
 * A partir de aquí es donde debes escribir los estilos de posicionamiento
 * y detalles que forman tu web. Disfruta!
 */
-/*------------------------------------*\
-    $TEXTURAS
+/*------------------------------------*    $TEXTURES
 \*------------------------------------*/
 .alert {
   margin-bottom: 1.5em;
@@ -1299,10 +1236,6 @@ body {
   border-radius: 2px;
   color: #262626;
   background-color: #ff944d;
-  -webkit-transition: background-color 0.25s 0 linear;
-  -moz-transition: background-color 0.25s 0 linear;
-  -ms-transition: background-color 0.25s 0 linear;
-  -o-transition: background-color 0.25s 0 linear;
   transition: background-color 0.25s 0 linear; }
   .badge:hover {
     color: #262626;
@@ -1343,9 +1276,8 @@ body {
   border-radius: 2px;
   margin-bottom: 1.5em;
   background-color: white;
-  border: 1px solid #ffc299;
-  -webkit-box-shadow: inset 0 1px 10px #ffe0cc;
-  box-shadow: inset 0 1px 10px #ffe0cc; }
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 10px #e6e6e6; }
   .well p:last-child {
     margin-bottom: 0; }
 
@@ -1365,13 +1297,11 @@ body {
   color: #ff944d;
   text-shadow: none; }
 
-/*------------------------------------*\
-    $BREAKPOINTS
+/*------------------------------------*    $BREAKPOINTS
 \*------------------------------------*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /*------------------------------------*\
-      $2x
-  \*------------------------------------*/
+  /*------------------------------------*    $2x
+\*------------------------------------*/
   /*
-   * Breakpoint para dispositivos retina
-   */ }
+ * Breakpoint para dispositivos retina
+ */ }

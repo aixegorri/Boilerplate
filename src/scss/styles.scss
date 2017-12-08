@@ -10,7 +10,7 @@
  */
 $media-queries-supported : true;
 
-@import "contenido.scss";
+@import "content.scss";
 
 @import "core/variables.scss";
 
@@ -20,29 +20,29 @@ $media-queries-supported : true;
 
 @import "core/icons.scss";
 
-@import "componentes/reset.scss";
+@import "components/reset.scss";
 
-@import "componentes/fonts.scss";
+@import "components/fonts.scss";
 
-@import "componentes/links.scss";
+@import "components/links.scss";
 
-@import "componentes/tables.scss";
+@import "components/tables.scss";
 
-@import "componentes/buttons.scss";
+@import "components/buttons.scss";
 
-@import "componentes/elements.scss";
+@import "components/elements.scss";
 
-@import "componentes/tipografia.scss";
+@import "components/tipografia.scss";
 
-@import "componentes/navigation.scss";
+@import "components/navigation.scss";
 
-@import "componentes/pagination.scss";
+@import "components/pagination.scss";
 
-@import "componentes/forms.scss";
+@import "components/forms.scss";
 
 @import "layout/site.scss";
 
-@import "componentes/textures.scss";
+@import "components/textures.scss";
 
 @import "layout/breakpoints.scss";
 
