@@ -5,7 +5,7 @@
   "main": "package.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w -o ./src/css ./src/scss",
+    "sass": "node-sass -w --output-style expanded --indent-width 3 -o ./src/css ./src/scss",
     "watch:metalang": "npm-run-all --parallel sass",
     "devserver": "browser-sync start --server --directory --startPath ./src --files ./src --reload-delay=300 --reload-debounce=500",
     "go": "npm-run-all --parallel devserver watch:metalang",
